@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: llmsql
+Version: 0.1
+Requires-Dist: anthropic
+Requires-Dist: openai
+Provides-Extra: vllm
+Requires-Dist: vllm; extra == "vllm"
+Requires-Dist: triton==2.2.0; extra == "vllm"
