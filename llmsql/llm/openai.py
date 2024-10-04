@@ -4,10 +4,10 @@ from typing import Dict, List
 import openai
 from llmsql.llm.base import DEFAULT_SYSTEM_PROMPT, LLM
 
-OPENAI_MODELS = ["gpt-3.5-turbo", "gpt-4"]
+OPENAI_MODELS = ["gpt-4o-mini", "gpt-4o"]
 
 class OpenAI(LLM):
-    def __init__(self, base_url: str, api_key: str, model: str = "gpt-3.5-turbo"):
+    def __init__(self, base_url: str, api_key: str, model: str = "gpt-4o-mini"):
         if model not in OPENAI_MODELS:
             raise ValueError(f"Received {model} which is an unsupported model. Supported models are f{OPENAI_MODELS}")
         self.model = model
